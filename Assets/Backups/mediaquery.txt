@@ -1,0 +1,114 @@
+/*------960-----*/
+
+@media all and (max-width:960px)
+{
+
+
+/*----header part(active btn)---*/
+	.active_btn label
+	{
+		display:none;	
+	}
+
+	.active_btn 
+	{
+		border-radius:50%;
+	}
+
+	.active_btn div img 
+	{
+	    margin: 6px 0px 0px 0px;
+	}
+
+	.active_btn
+	{
+	    height: 50px;
+	    width: 50px;
+	    background-color: #EAF1FB;
+	    margin: 7px 0px 0px 35px;
+	}
+
+}
+
+/*-------868-----*/
+
+@media all and (max-width:1024px)
+{
+	.email_msg
+	{
+		flex-direction: column;
+	}
+	
+	.email_heading
+	{
+		margin-top:5px;
+	}
+
+	.content_in_email
+	{
+		flex-direction:column;
+	}
+
+	.message_box
+	{
+		width: 63vw;
+	}
+
+	.messages
+	{
+		height:auto;
+	}
+	
+	.messages button:nth-child(2)
+	{
+		display:none;
+	}
+
+	.email_content
+	{
+		margin-left:10px;
+	}
+	
+	.email_content_txt
+	{
+   	 margin-left:10px;
+	}
+
+	.messages button
+	{
+    		height: 42px;
+	}
+	
+	
+}
+
+
+
+/*------865-----*/
+
+@media all and (max-width:865px)
+{
+	.search button:not(.search_img)
+	{
+		display:none
+	}
+	
+	.search input
+	{
+		display:none;
+	}
+	
+	.search
+	{
+		 width: 34px;
+		 background:none;
+		 margin: 10px 0px 0px 230px;
+	}
+
+	.active_btn
+	{
+		 margin: 7px 0px 0px 5px;
+	}
+	
+	
+}
