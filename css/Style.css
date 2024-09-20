@@ -4,6 +4,11 @@ body
 	background-color:#F6F8FC;
 }
 
+*
+{
+	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
 /*---Title---*/
 
 .icon
@@ -20,8 +25,8 @@ body
 
 .side_nav
 {
-	width: 8vw;
-	height:100vh;
+	width: 67px;
+	height:640px;
 	background-color:#eaf1fd;
 }
 
@@ -83,7 +88,12 @@ body
 {
 	border:1px ;
 	margin:15px;
-	
+	display:flex;	
+}
+
+.menu_logo_dup
+{
+	  visibility:hidden;
 }
 
 
@@ -92,7 +102,7 @@ body
 .search
 {
 	display:flex;
-    	height: 35px;
+    	height: 44px;
     	width: 616px;
     	margin: 10px 0px 0px 100px;
     	border-radius: 50px;
@@ -109,9 +119,9 @@ body
     	float: left;
 }
 
-.search img
+.search img:first-child
 {
-	margin-top:2px;
+	margin: 7px 0px 0px 6px;
 }
 
 
@@ -119,6 +129,11 @@ body
 {
 	width: 100%;
     	
+}
+
+.search_input input::placeholder
+{
+	font-size:17px;
 }
 
 .search button:hover
@@ -141,9 +156,6 @@ body
 }
 
 
-.search_input input::placeholder {
-    font: 1.1rem/3 sans-serif;
-}
 
 .tune_img
 {
@@ -152,11 +164,20 @@ body
 
 .active_btn
 {
-    	height: 40px;
-    	width: 115px;
+    	height: 44px;
+    	width: 110px;
     	border-radius: 50px;
     	background-color: #EAF1FB;
-	margin: 15px 0px 0px 35px;
+	margin: 7px 0px 0px 35px;
+	padding-top:5px;
+	font-size:14px;
+}
+
+.active_btn label
+{
+	font-weight: 600;
+    	color: #646161;
+	margin-top: 3px;
 }
 
 .active_btn div
@@ -167,7 +188,7 @@ body
 
 .active_btn div img
 {
-	margin:0px 6px 0px 6px;
+	margin:3px 6px 0px 6px;
 }
 
 .header_icons
@@ -215,7 +236,6 @@ body
     	border-radius: 50%;
     	text-align: center;
     	align-items: center;
-    	font-family: Arial;
     	padding: 12px;
     	margin: 0px 0px 0px 10px;
     	display: flex;
@@ -226,7 +246,6 @@ body
 
 .user_logo_img
 {
-	font-family: Arial;
 	margin-top:3px;
 }
 
@@ -235,8 +254,8 @@ body
 
 .nav
 {
-	height:88vh;
-	width:18vw;
+	height:87vh;
+	width:245px;
 	background-color:#f8fbff;
 }
 
@@ -247,7 +266,7 @@ body
     	width: 143px;
     	height: 54px;
     	border: none;
-    	border-radius: 12px
+    	border-radius: 18px
 }
 
 .compose_btn:hover
@@ -259,6 +278,11 @@ body
 {
 	float: left;
 	margin-left: 3px;
+}
+
+.compose_btn img:nth-child(2)
+{
+	display:none;
 }
 
 .compose_btn label
@@ -289,7 +313,6 @@ body
 .nav_icons_inbox label
 {
     	margin-left: 20px;
-    	font-family: Arial;
     	font-size: 14px;
     	font-weight: bolder;
     	color: #565454;
@@ -313,7 +336,6 @@ body
 .nav_icons label
 {
     	margin-left: 20px;
-    	font-family: Arial;
     	font-size: 14px;
     	color: #565454;
     	margin-top: 2px;
@@ -333,7 +355,6 @@ body
 .nav_labels label
 {
 	font-size: 15px;
-    	font-family: Arial;
     	font-weight: 550;
     	color: #565454;
     	margin-right: 130px;
@@ -386,6 +407,13 @@ background-color: #f2f2f2;
     	width: 25px;
 }
 
+.msg_top_btn_arrow
+{
+	display:flex;
+	
+	margin-left:auto;
+}
+
 .msg_top button:hover:not(.msg_top_icons,.msg_top_btn_right)
  {
     	background-color:#f2f2f2;
@@ -413,12 +441,13 @@ background-color: #f2f2f2;
 .msg_top_btn_right
 {
 	height: 40px;
-	width:8vw;
-	color:#878787;
-    	margin: 3px 0px 0px 49vw;
-	background: none;
+    	width: 75px;
+    	color: #878787;
+    	display: flex;
+    	background: none;
     	border: none;
-	border-radius:5px;
+    	margin-top: 14px;
+    	border-radius: 5px;
 }
 
 .msg_top_btn_right:hover
@@ -439,23 +468,25 @@ background-color: #f2f2f2;
 
 .arrow_img
 {
-	margin:16px;
-	
+	margin:16px;	
 }
+
+/*----messages-----*/
 
 .messages
 {
-	height:6vh;
+	display:flex;
+	height:38px;
 	background-color:#F2F6FC;
 	width:75vw;
 	border-bottom:1px solid #dfdfdf;
-	margin-top:1px;
+	margin-top:1px;	
+	
 }
 
 .messages:hover
 {
 	box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
-
 }
 
 .messages button
@@ -464,21 +495,43 @@ background-color: #f2f2f2;
     	border: none;
 }
 
-.messages label:not(.email_content,.email_content_txt,.email_content_date)
+.email_heading
 {
 	color: #202124;
-    	font-family: Arial;
-    	font-size: 15px;
+    	font-size: .875rem;
 	font-weight:normal;
-	margin-right:10vw;
+	margin: 5px 0px 0px 5px;
+	filter: contrast(16.84);
+    	opacity: 0.9;
 }
+
+.email_msg
+{
+	display:flex;
+	margin-top:8px;
+	justify-content:space-between;
+	width:922px;
+}
+
+
 
 .email_content
 {
 	color: #202124;
-    	font-family: Arial;
-    	font-size: 15px;
-	font-weight:normal;	
+    	font-size: .875rem;
+	font-weight:normal;
+	filter: contrast(16.84);
+    	opacity: 0.9;
+}
+
+.content_in_email
+{
+	display: flex;
+    	width: 573px;
+    	white-space: nowrap;  
+  	overflow: hidden;
+  	text-overflow: ellipsis; 
+	margin-top:5px;
 }
 
 .messages img
@@ -488,25 +541,42 @@ background-color: #f2f2f2;
 	margin-left:4px;
 }
 
+
+
 .email_content_txt
 {
-	margin-right:4vw;
 	color: #706363;
-	font-family: Arial;
-	font-size: 14px;
+	font-size: .875rem;	
 }
 
-.email_content_date
+
+
+.email_content_date 
 {
 	color: #706363;
-	font-size:13px;
+	font-size:14px;
 }
 
 .message_box
 {
-	height:82vh;
+	height:79vh;
+	width: 75vw;
 	overflow-x: hidden; /* Hide horizontal scrollbar */
  	overflow-y: scroll; /* Add vertical scrollbar */
 
 }
+
+
+
+
+
+/*------------------------Media Queries------*/
+
+
+
+ 
+
+
+	
+
 
