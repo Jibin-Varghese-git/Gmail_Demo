@@ -1,5 +1,191 @@
+* {
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
 
-	*
-	{
-		display:none;
-	}
+.header
+{
+	display:none;
+}
+
+.header_mobile
+{
+	display:block;
+
+	height:auto;
+	display:flex;
+	width:98vw;
+}
+
+.header_500px
+{
+	height:auto;
+	width:98vw;
+}
+
+.header_mobile img
+{
+	margin:10px 0px 10px 10px;
+}
+
+.nav
+{
+	display:none;
+}
+
+.messages
+{
+	width:98vw;
+	height:auto;
+	background-color: #ffffff;
+}
+
+.msg_top
+{
+	display:none;
+}
+
+.header_mobile_box {
+    	padding-top: 11px;
+	margin-left: 5px;
+}
+
+.header_mobile_heading
+{
+	color: #4a4242;
+	font-size: 1em;
+    	font-weight: 500;
+	margin-top: 8px;
+	opacity:0.9;
+}
+
+.header_mobile_txt
+{
+	color: #1f1f1f;
+    	font-size: .875em;
+    	font-weight: 400;
+	margin-top: 7px;
+	opacity:0.8;
+}
+
+.header_mobile a
+{
+	margin: 20px 19px 0px auto;
+        text-decoration: none;
+	color: #0b57d0;
+	font-size: .875em;
+}
+
+.messages button:nth-child(2)
+{
+	display:none;
+}
+
+.email_msg
+{
+	flex-direction:column;
+}
+
+.content_in_email
+{
+	flex-direction:column;
+}
+
+email_content
+{
+	margin-top:-7px;
+}
+
+.email_content_txt
+{
+	margin-bottom:6px;
+}
+
+.email_content_date
+{
+	display:none;
+}
+
+.email_heading
+{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    	font-weight: bold;
+	font-size: 17px;
+	margin: 5px 0px 0px 1px;
+}
+
+.input_bar
+{
+        padding: 7px 15px;
+        height: auto;
+        display: flex;
+        background: #f1f1f1;
+        justify-content: space-between;
+}
+
+.input_bar img:not(.btn_img)
+{
+	margin-right:10px;
+}
+
+.input_bar label
+{
+    	font-size: 20px;
+    	opacity: 0.9;
+}
+
+.input_bar button
+{
+	background-color:#d22b2b;
+	border-radius:3px;
+	border:none;
+}
+
+.header_500px
+{
+	display:block;
+}
+
+.star_date
+{
+	display:block;
+	padding:10px;
+	width:10%;
+}
+
+
+.star_date a
+{
+    	font-size: 12px;
+    	text-decoration: none;
+    	color: #2742f8;
+}
+
+.star_date img
+{
+	margin-top:15px;
+}
+
+.inbox_search
+{
+	display:block;
+	background-color:#ffffff;
+	border-bottom:1px solid;
+	border-color:#dfdfdf;
+	display:flex;
+}
+
+
+.inbox_search img
+{
+	margin: 13px 3px 5px 19px;
+        opacity: 0.7;
+}
+
+.inbox_search input
+{
+	border:none;
+	margin: 4px 0px 0px 0px;
+}
+
+
+
